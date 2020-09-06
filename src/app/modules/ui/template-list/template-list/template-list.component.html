@@ -1,4 +1,4 @@
-<ul class="list-group">
+<ul class="list-group" [ngClass]="{selectable: selectable}">
 	<li *ngFor="let item of items; index as idx; count as cnt; trackBy: trackByFn"
 		[ngClass]="{ selected: isSelected(item) }"
 		(click)="onItemClick(item)"
