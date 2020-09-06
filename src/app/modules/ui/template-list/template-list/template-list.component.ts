@@ -13,6 +13,7 @@ export class TemplateListComponent<T> {
   @Input() trackByFn?: TrackByFunction<T>;
   @Input() selectable = true;
   @Input() selected?: T;
+  // TODO: load indicator
 
   @Output() itemClick = new EventEmitter<T>();
   @Output() selectionChange = new EventEmitter<T | null>();
