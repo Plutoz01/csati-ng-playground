@@ -1,0 +1,27 @@
+ul {
+  list-style-type: none;
+}
+
+body {
+  color: #333;
+}
+
+pg-template-list li{
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  padding: 0.5em;
+}
+
+pg-template-list li.selected {
+  background-color: rgb(245, 241, 179) !important;
+}
+
+pg-template-list h4{
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+pg-template-list ul.selectable > li {
+  cursor: pointer;
+  user-select: none;
+}
