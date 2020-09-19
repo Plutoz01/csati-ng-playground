@@ -1,17 +1,15 @@
 {
-  "extends": "../tsconfig.app.json",
+  "extends": "../projects/login-demo/tsconfig.app.json",
   "compilerOptions": {
     "types": [
       "node"
     ]
   },
   "exclude": [
-    "../src/test.ts",
-    "../src/**/*.spec.ts",
-    "../projects/**/*.spec.ts"
+    "../projects/**/*.spec.ts",
+    "../projects/**/*.e2e-spec.ts"
   ],
   "include": [
-    "../src/**/*",
     "../projects/**/*"
   ],
   "files": [
