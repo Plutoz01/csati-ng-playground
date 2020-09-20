@@ -1,0 +1,11 @@
+<ng-container *ngIf="!(isSignedIn$ | async)">
+  <amplify-authenticator usernameAlias="email" [formFields]="formFields">
+    <amplify-sign-up header-text="Create new account" slot="sign-up" usernameAlias="email" [formFields]="signUpFormFields"> </amplify-sign-up>
+  </amplify-authenticator>
+</ng-container>
+
+<ng-container *ngIf="isSignedIn$ | async">
+  <amplify-greetings [username]="(user$ | async)?.attributes.name"></amplify-greetings>
+  <!-- <amplify-sign-out></amplify-sign-out> -->
+</ng-container>
+
